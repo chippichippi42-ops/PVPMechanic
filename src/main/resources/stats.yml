@@ -1,0 +1,43 @@
+# Default stat values for PVPMechanic
+# All values are percentages unless otherwise noted
+
+default:
+  # Damage modifiers
+  DAMAGE: 10.0
+  MELEE_DAMAGE: 0.0
+  RANGED_DAMAGE: 0.0
+  ELEMENTAL_DAMAGE: 0.0
+  TRUE_DAMAGE: 0.0
+  INCREASE_DAMAGE: 0.0
+  
+  # Defense modifiers
+  ARMOR: 5.0
+  TRUE_DEFENSE: 0.0
+  DAMAGE_REDUCTION: 0.0
+  
+  # Specialized protections
+  REDUCE_FALL_DAMAGE: 0.0
+  REDUCE_ELEMENTAL_DAMAGE: 0.0
+  REDUCE_MELEE_DAMAGE: 0.0
+  REDUCE_RANGED_DAMAGE: 0.0
+  CRITICAL_DAMAGE_REDUCTION: 0.0
+  
+  # Combat effects
+  PENETRATION: 0.0
+  CRIT_RATE: 5.0
+  CRIT_DAMAGE: 50.0
+  DAMAGE_REBOUND: 0.0
+  LIFESTEAL: 0.0
+  LIFESTEAL_REDUCTION: 0.0
+  
+  # Effect modifiers
+  REDUCE_NEGATIVE_EFFECT: 0.0
+  
+  # Skill-related stats
+  BLOCK_CHANCE: 10.0
+  BLOCK_EFFICIENCY: 50.0
+  THUNDER_CHANCE: 5.0
+  ICE_CHANCE: 5.0
+  IGNITE_CHANCE: 5.0
+  ADDITIONAL_ATTACK_DAMAGE: 30.0
+  ADDITIONAL_ATTACK_CHANCE: 10.0

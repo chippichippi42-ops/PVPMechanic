@@ -1,0 +1,21 @@
+name: PVPMechanic
+version: 1.0.0
+main: org.twilight.PVPMechanic.PVPMechanic
+api-version: 1.16
+authors: [Twilight]
+description: A comprehensive PVP mechanics system with modular damage calculation and flexible stat systems
+softdepend: [PlaceholderAPI]
+
+commands:
+  pvpmechanic:
+    description: Main command for PVPMechanic
+    usage: /pvpmechanic <subcommand>
+    aliases: [pvp, pvpmech]
+
+permissions:
+  pvpmechanic.admin:
+    description: Allows access to all PVPMechanic commands
+    default: op
+  pvpmechanic.stats:
+    description: Allows viewing own stats
+    default: true

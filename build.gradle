@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group 'org.twilight'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+
+dependencies {
+    // Paper API (will need to be configured for specific versions)
+    // compileOnly 'io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT'
+    
+    // For PlaceholderAPI integration
+    // compileOnly 'me.clip:placeholderapi:2.11.4'
+    
+    // Database dependencies
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation 'org.xerial:sqlite-jdbc:3.42.0.0'
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    
+    // Configuration
+    implementation 'org.yaml:snakeyaml:2.0'
+    
+    // Testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+shadowJar {
+    archiveClassifier.set('')
+    archiveVersion.set('')
+    archiveBaseName.set('PVPMechanic')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}

@@ -1,0 +1,53 @@
+# Gradle files
+.gradle/
+build/
+
+# IntelliJ files
+.idea/
+*.iml
+
+# Eclipse files
+.bin/
+.settings/
+.classpath
+.project
+
+# VS Code files
+.vscode/
+
+# Mac files
+.DS_Store
+
+# Environment files
+.env
+.env.local
+
+# Log files
+*.log
+
+# Database files
+data/
+*.db
+
+# Local configuration
+local.properties
+
+# Dependency directories
+dependencies/
+lib/
+
+# Generated files
+*.jar
+*.war
+*.ear
+
+# Ignore gradle wrapper files
+gradlew
+gradlew.bat
+gradle/
+
+# Ignore all .class files
+**/*.class
+
+# Ignore all .bak files
+**/*.bak

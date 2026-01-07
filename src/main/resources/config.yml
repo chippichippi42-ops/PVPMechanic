@@ -1,0 +1,36 @@
+# PVPMechanic Configuration
+# Main configuration file for the PVPMechanic plugin
+
+# Storage configuration
+storage:
+  type: "yaml"  # Options: yaml, sqlite, mysql
+  
+  # YAML settings
+  yaml:
+    auto-save-interval: 300  # Save every 5 minutes (in seconds)
+  
+  # SQLite settings
+  sqlite:
+    file: "pvp_data.db"
+  
+  # MySQL settings
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "pvp_mechanic"
+    username: "root"
+    password: "password"
+    pool-size: 10
+    max-lifetime: 1800000  # 30 minutes
+
+# Performance settings
+performance:
+  enable-object-pooling: true
+  enable-stat-caching: true
+  cache-invalidation-interval: 60  # seconds
+
+# Debug settings
+debug:
+  log-damage-calculations: false
+  log-skill-triggers: true
+  log-performance-metrics: false
