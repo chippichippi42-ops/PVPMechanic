@@ -1,0 +1,22 @@
+stats:
+  generic_damage: 0.0
+  melee_damage: 0.0
+  ranged_damage: 0.0
+  elemental_damage: 0.0
+  true_damage: 0.0
+  increase_damage: 0.0
+  generic_armor: 0.0
+  true_defense: 0.0
+  damage_reduction: 0.0
+  reduce_fall_damage: 0.0
+  reduce_elemental_damage: 0.0
+  reduce_melee_damage: 0.0
+  reduce_ranged_damage: 0.0
+  critical_damage_reduction: 0.0
+  penetration: 0.0
+  crit_rate: 5.0
+  crit_damage: 1.5
+  damage_rebound: 0.0
+  lifesteal: 0.0
+  lifesteal_reduction: 0.0
+  reduce_negative_effect: 0.0
