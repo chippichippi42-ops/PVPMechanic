@@ -1,0 +1,18 @@
+skills:
+  block:
+    enabled: true
+    default_chance: 5.0
+    default_efficiency: 50.0
+  thunder:
+    enabled: true
+    default_chance: 5.0
+  ice:
+    enabled: true
+    default_chance: 5.0
+  ignite:
+    enabled: true
+    default_chance: 5.0
+  additional_attack:
+    enabled: true
+    default_chance: 5.0
+    default_damage_scaling: 50.0

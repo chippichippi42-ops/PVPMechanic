@@ -1,0 +1,14 @@
+# Damage Formula Calculation Order
+# 1. Base Damage + Melee/Ranged Stats
+# 2. Critical Hit Multiplier
+# 3. Skill Modifiers
+# 4. Armor & Damage Reduction
+# 5. Increase Damage Modifier
+# 6. Post-calculation effects (Lifesteal, Rebound)
+order:
+  - BASE_STATS
+  - CRIT
+  - SKILLS
+  - DEFENSE
+  - INCREASE_DAMAGE
+  - POST_EFFECTS

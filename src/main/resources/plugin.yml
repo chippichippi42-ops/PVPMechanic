@@ -1,0 +1,11 @@
+name: PVPMechanic
+version: 1.0
+main: org.twightlight.PVPMechanic.PVPMechanic
+api-version: 1.18
+description: A comprehensive PVP mechanic system for Paper servers.
+author: twightlight
+softdepend: [PlaceholderAPI]
+commands:
+  pvp:
+    description: PVPMechanic main command
+    usage: /pvp stats

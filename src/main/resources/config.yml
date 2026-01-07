@@ -1,0 +1,25 @@
+storage:
+  type: "yaml"  # Options: yaml, sqlite, mysql
+  
+  # YAML settings
+  yaml:
+    auto-save-interval: 300  # Save every 5 minutes (in seconds)
+  
+  # SQLite settings
+  sqlite:
+    file: "pvp_data.db"
+  
+  # MySQL settings
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "pvp_mechanic"
+    username: "root"
+    password: "password"
+    pool-size: 10
+    max-lifetime: 1800000  # 30 minutes
+
+formula:
+  # Coefficients for damage calculation
+  base_multiplier: 1.0
+  armor_constant: 100.0
