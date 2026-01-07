@@ -1,0 +1,35 @@
+# Skills configuration for PVPMechanic
+
+# Enable/disable skills
+enabled:
+  BLOCK: true
+  THUNDER: true
+  ICE: true
+  IGNITE: true
+  ADDITIONAL_ATTACK: true
+
+# Block skill configuration
+block:
+  chance: 10.0  # Base chance, can be overridden by BLOCK_CHANCE stat
+  efficiency: 50.0  # Base efficiency, can be overridden by BLOCK_EFFICIENCY stat
+
+# Thunder skill configuration
+thunder:
+  chance: 5.0  # Base chance, can be overridden by THUNDER_CHANCE stat
+  damage_multiplier: 1.5  # Multiplier for additional damage
+
+# Ice skill configuration
+ice:
+  chance: 5.0  # Base chance, can be overridden by ICE_CHANCE stat
+  duration: 1.0  # Duration in seconds (affected by REDUCE_NEGATIVE_EFFECT)
+
+# Ignite skill configuration
+ignite:
+  chance: 5.0  # Base chance, can be overridden by IGNITE_CHANCE stat
+  duration: 5.0  # Duration in seconds (affected by REDUCE_NEGATIVE_EFFECT)
+  damage_per_tick: 1.0  # Damage per second
+
+# Additional Attack skill configuration
+additional_attack:
+  chance: 10.0  # Base chance, can be overridden by ADDITIONAL_ATTACK_CHANCE stat
+  damage_percentage: 30.0  # Percentage of base damage for follow-up attack

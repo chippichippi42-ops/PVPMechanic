@@ -1,0 +1,17 @@
+# Damage formula configuration for PVPMechanic
+
+# Base damage calculation
+damage:
+  base_multiplier: 1.0  # Multiplier applied to base damage
+  armor_reduction_factor: 0.04  # How much armor reduces damage (vanilla-like)
+  crit_multiplier: 1.5  # Base critical hit multiplier
+  penetration_factor: 0.01  # How much penetration reduces armor effectiveness
+
+# Calculation order (phases)
+calculation_order:
+  - "base_damage"
+  - "critical_hit"
+  - "armor_defense"
+  - "skills"
+  - "post_effects"
+  - "custom_modifiers"
