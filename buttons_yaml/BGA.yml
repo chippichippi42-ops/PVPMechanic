@@ -1,0 +1,24 @@
+BGA:
+  display-name: Táo kim cương
+  location:
+    x: 5
+    y: 15
+  custom_values:
+  - 'level * 2.5'
+  item:
+    material: SKULL_ITEM
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjAxODUxNjU0MTNjNWE4ZDZlZWE0Mzc0Y2QxOWQyMTZmYjg0MDI4ZjY3ZTQ3NzI3NmU2NTI2ZjZhNzRmYTBjMiJ9fX0='
+    lore:
+    - '&7Táo vàng có {value_0}% cho người dùng Absorption III trong 3 phút'
+    - '&7và Regeneration III trong 5 giây.'
+    - '&cChơi đá X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

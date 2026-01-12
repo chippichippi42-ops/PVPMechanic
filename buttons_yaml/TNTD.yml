@@ -1,0 +1,22 @@
+TNTD:
+  display-name: Bomman
+  location:
+    x: 5
+    y: 2
+  custom_values:
+  - 'level * 2.5'
+  item:
+    material: TNT
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tăng sát thương TNT thêm {value_0}%.'
+    - '&cNaruto X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

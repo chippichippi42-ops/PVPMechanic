@@ -1,0 +1,22 @@
+BLC:
+  display-name: Chống đỡ
+  location:
+    x: 2
+    y: 20
+  custom_values:
+  - 'level'
+  item:
+    material: BEDROCK
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tăng {value_0}% tỷ lệ kích hoạt khiên.'
+    - '&cKhiên huyền thoại X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

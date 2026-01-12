@@ -1,0 +1,22 @@
+IWD:
+  display-name: Gỗ khởi đầu
+  location:
+    x: 3
+    y: 2
+  custom_values:
+  - 'level'
+  item:
+    material: WOOD
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Bắt đầu trận đấu nhận được {value_0} gỗ.'
+    - '&cLen khởi đầu X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

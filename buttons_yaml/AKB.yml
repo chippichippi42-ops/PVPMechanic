@@ -1,0 +1,22 @@
+AKB:
+  display-name: Tránh xa tao ra
+  location:
+    x: -3
+    y: 12
+  custom_values:
+  - 'level * 2'
+  item:
+    material: STICK
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tăng khả năng đẩy lùi của mũi tên thêm {value_0}%.'
+    - '&cPhá màng trinh X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

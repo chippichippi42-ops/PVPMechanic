@@ -1,0 +1,22 @@
+IES:
+  display-name: Đá khởi đầu
+  location:
+    x: 3
+    y: 4
+  custom_values:
+  - 'level'
+  item:
+    material: ENDER_STONE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Bắt đầu trận đấu nhận được {value_0} đá kết thúc.'
+    - '&cGỗ khởi đầu X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

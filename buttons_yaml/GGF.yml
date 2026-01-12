@@ -1,0 +1,24 @@
+GGF:
+  display-name: Midas
+  location:
+    x: 4
+    y: 6
+  custom_values:
+  - '(31 - level - Math.floor((level / 20)))'
+  item:
+    material: GOLD_INGOT
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Sau khi bắt đầu trận đấu, cứ mỗi {value_0} giây sẽ'
+    - '&7nhận được 1 thỏi vàng.'
+    - '&cĐá khởi đầu X'
+    - '&cPhần thưởng X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

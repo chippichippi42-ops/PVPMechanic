@@ -1,0 +1,22 @@
+IW:
+  display-name: Len khởi đầu
+  location:
+    x: 3
+    y: 0
+  custom_values:
+  - 'level * 4'
+  item:
+    material: WOOL
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Bắt đầu trận đấu nhận được {value_0} len.'
+    - '&cMáu tối đa X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

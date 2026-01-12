@@ -1,0 +1,23 @@
+EMS:
+  display-name: Phần thưởng
+  location:
+    x: 5
+    y: 4
+  custom_values:
+  - 'level * 3.5'
+  item:
+    material: EMERALD
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Khi mua 1 quả TNT có xác suất {value_0}%.'
+    - '&7nhận được 1 quả bóng lửa.'
+    - '&cBomman X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

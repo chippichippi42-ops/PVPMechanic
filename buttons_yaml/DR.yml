@@ -1,0 +1,22 @@
+DR:
+  display-name: Da cứng
+  location:
+    x: 1
+    y: 4
+  custom_values:
+  - 'level * 1.25'
+  item:
+    material: IRON_CHESTPLATE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Giảm {value_0}% sát thương nhận vào.'
+    - '&cTim vàng X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

@@ -1,0 +1,23 @@
+IHE:
+  display-name: Kotex thấm hút
+  location:
+    x: 0
+    y: 10
+  custom_values:
+  - 'level'
+  item:
+    material: WOOL
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tăng {value_0}% khả năng hồi phục.'
+    - '&cLưỡi đao máu X'
+    - '&cTự hồi phục X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

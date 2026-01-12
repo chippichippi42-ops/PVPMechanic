@@ -1,0 +1,22 @@
+SLS:
+  display-name: Lưỡi đao máu
+  location:
+    x: -1
+    y: 8
+  custom_values:
+  - 'level * 0.5'
+  item:
+    material: IRON_AXE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tăng tỷ lệ hút máu cận chiến thêm {value_0}%.'
+    - '&cMa cà rồng X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

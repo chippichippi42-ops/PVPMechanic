@@ -1,0 +1,23 @@
+IRS:
+  display-name: Hồi sinh nhanh
+  location:
+    x: 3
+    y: 18
+  custom_values:
+  - 'level * 3'
+  item:
+    material: GHAST_TEAR
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Khi bị kết liễu, có xác suất {value_0}% hồi sinh ngay lập tức.'
+    - '&cChơi đá X'
+    - '&cKhổng lồ hóa X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

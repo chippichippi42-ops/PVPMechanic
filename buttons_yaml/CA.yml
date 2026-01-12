@@ -1,0 +1,22 @@
+CA:
+  display-name: Chí mạng (mũi tên)
+  location:
+    x: -3
+    y: 18
+  custom_values:
+  - 'level * 1.5'
+  item:
+    material: BLAZE_ROD
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Mũi tên tăng {value_0}% tỷ lệ chí mạng.'
+    - '&cNhân đôi X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

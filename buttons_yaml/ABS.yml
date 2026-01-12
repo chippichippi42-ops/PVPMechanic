@@ -1,0 +1,23 @@
+ABS:
+  display-name: Hấp thụ
+  location:
+    x: 3
+    y: 8
+  custom_values:
+  - 'level'
+  item:
+    material: GOLDEN_APPLE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Nhận sát thương có {value_0}% tỷ lệ nhận được thêm 2 tim vàng.'
+    - '&cTu La X'
+    - '&cMidas X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

@@ -1,0 +1,23 @@
+WR:
+  display-name: Chiến binh
+  location:
+    x: 6
+    y: 16
+  custom_values:
+  - 'level * 0.05'
+  item:
+    material: WOOL
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Khi kết liễu đối thủ, nhận được {value_0} máu tối đa,'
+    - '&7cộng dồn tối đa 5 lần.'
+    - '&cTáo kim cương X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'
