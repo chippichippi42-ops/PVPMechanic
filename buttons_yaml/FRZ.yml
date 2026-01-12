@@ -7,7 +7,7 @@ FRZ:
   - 'level * 1.5'
   item:
     material: PACKED_ICE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ FRZ:
     lore:
     - '&7Mỗi khi bắn tên trúng đích, có xác suất'
     - '&7{value_0}% đóng băng địch trong 1 giây.'
-    - '&cBắn xong chạy X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

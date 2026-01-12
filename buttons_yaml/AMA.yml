@@ -5,10 +5,10 @@ AMA:
     y: 14
   custom_values:
   - 'level * 2.5'
-  - '10.0 + (doublelevel * 0.5)'
+  - '10.0 + level * 0.5'
   item:
     material: GOLD_SWORD
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -18,8 +18,4 @@ AMA:
     - '&7Đòn đánh thường có xác suất {value_0}% gây ra thêm'
     - '&71 đòn đánh phụ. Đòn đánh này có tỷ số ST bằng {value_1}%'
     - '&7ST đòn đánh gốc.'
-    - '&cTấn công nhanh X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

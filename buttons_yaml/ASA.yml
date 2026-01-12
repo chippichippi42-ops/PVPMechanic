@@ -8,7 +8,7 @@ ASA:
   - 'level * 0.25'
   item:
     material: BONE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,8 +17,4 @@ ASA:
     lore:
     - '&7Khi kết liễu đối thủ, nhận được {value_0}% mọi TLCM'
     - '&7và {value_1}% STCM, cộng dồn tối đa 5 lần.'
-    - '&cAnh hùng khiên X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

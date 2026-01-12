@@ -7,7 +7,7 @@ MAS:
   - 'level * 4'
   item:
     material: SHEARS
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ MAS:
     lore:
     - '&7Cận chiến có tỷ lệ {value_0}% được giảm 35%.'
     - '&7thời gian hồi đòn đánh.'
-    - '&cPhá màng trinh X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

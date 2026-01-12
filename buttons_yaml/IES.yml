@@ -7,7 +7,7 @@ IES:
   - 'level'
   item:
     material: ENDER_STONE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,8 +15,4 @@ IES:
     unbreakable: true
     lore:
     - '&7Bắt đầu trận đấu nhận được {value_0} đá kết thúc.'
-    - '&cGỗ khởi đầu X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

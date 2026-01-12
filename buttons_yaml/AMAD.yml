@@ -7,7 +7,7 @@ AMAD:
   - 'level * 0.5'
   item:
     material: ANVIL
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ AMAD:
     lore:
     - '&7Tỷ số ST gây ra dựa trên sát thương đòn đánh gốc'
     - '&7của đòn đánh phụ được tăng thêm {value_0}%.'
-    - '&cMa gaeming X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

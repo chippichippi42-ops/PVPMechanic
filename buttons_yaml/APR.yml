@@ -4,11 +4,11 @@ APR:
     x: 3
     y: 22
   custom_values:
-  - '1 + round(level / 5)'
+  - '(1 + round(level / 5))'
   - 'level * 1.5'
   item:
     material: BEACON
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,9 +17,4 @@ APR:
     lore:
     - '&7Khi bắt đầu trận đấu, nhận được {value_0} vật phẩm linh tinh'
     - '&7ngẫu nhiên, có xác suất {value_1}% nhận được vật phẩm có giá trị cao.'
-    - '&cHãy trao cho anh X'
-    - '&cChống đỡ X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

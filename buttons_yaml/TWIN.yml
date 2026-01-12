@@ -7,7 +7,7 @@ TWIN:
   - 'level * 1.5'
   item:
     material: SKULL_ITEM
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,8 +17,4 @@ TWIN:
     lore:
     - '&7Khi bắn 1 mũi tên, bắn thêm 1 mũi tên có sát thương'
     - '&7bằng {value_0}% mũi tên ban đầu.'
-    - '&cSát thương chí mạng X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

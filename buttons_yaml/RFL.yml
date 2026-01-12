@@ -7,7 +7,7 @@ RFL:
   - 'level * 1.25'
   item:
     material: RAW_FISH
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,9 +17,4 @@ RFL:
     - '&7Mỗi khi nhận sát thương, có {value_0}% phản lại một đòn'
     - '&7cận chiến với hệ số sát thương gốc là 2 và giảm'
     - '&715% sát thương phải chịu từ đòn tấn công đó.'
-    - '&cGayyyy X'
-    - '&cChống đỡ XV'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

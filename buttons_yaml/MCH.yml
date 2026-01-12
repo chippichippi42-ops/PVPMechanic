@@ -7,7 +7,7 @@ MCH:
   - 'level'
   item:
     material: IRON_INGOT
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,8 +15,4 @@ MCH:
     unbreakable: true
     lore:
     - '&7Mỗi khi mua khối len, được thưởng thêm {value_0} khối len.'
-    - '&cMộ len X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

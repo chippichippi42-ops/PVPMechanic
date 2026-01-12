@@ -5,10 +5,10 @@ AGF:
     y: 19
   custom_values:
   - 'level'
-  - '1 + round(level / 10)'
+  - '(1 + round(level / 10))'
   item:
     material: FURNACE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ AGF:
     unbreakable: true
     lore:
     - '&7Khi hồi sinh, nhận được {value_0} thỏi sắt và {value_1} thỏi vàng.'
-    - '&cHồi sinh nhanh X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

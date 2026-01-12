@@ -7,7 +7,7 @@ CDR:
   - 'level * 2'
   item:
     material: CHAINMAIL_CHESTPLATE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,8 +15,4 @@ CDR:
     unbreakable: true
     lore:
     - '&7Giảm {value_0}% ST chí mạng nhận vào.'
-    - '&cKhổng lồ hóa X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

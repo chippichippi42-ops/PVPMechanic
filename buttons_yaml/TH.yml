@@ -7,7 +7,7 @@ TH:
   - 'level * 1.5'
   item:
     material: SKULL_ITEM
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -18,8 +18,4 @@ TH:
     - '&7Đòn cận chiến lên mục tiêu có xác suất {value_0}% triệu hồi'
     - '&bSấm sét &7gây 2 điểm ST chuẩn lên mục tiêu và &ahồi phục'
     - '&7trực tiếp cho bản thân 1 máu.'
-    - '&cSát thương chí mạng X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

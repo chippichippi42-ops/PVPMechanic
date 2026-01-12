@@ -7,7 +7,7 @@ FDR:
   - 'level * 2.5'
   item:
     material: FEATHER
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,8 +15,4 @@ FDR:
     unbreakable: true
     lore:
     - '&7Giảm {value_0}% sát thương rơi nhận vào.'
-    - '&cMáu tối đa X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

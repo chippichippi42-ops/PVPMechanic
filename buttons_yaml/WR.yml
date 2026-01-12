@@ -7,7 +7,7 @@ WR:
   - 'level * 0.05'
   item:
     material: WOOL
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ WR:
     lore:
     - '&7Khi kết liễu đối thủ, nhận được {value_0} máu tối đa,'
     - '&7cộng dồn tối đa 5 lần.'
-    - '&cTáo kim cương X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

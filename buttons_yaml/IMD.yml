@@ -7,7 +7,7 @@ IMD:
   - 'level * 0.5'
   item:
     material: ENCHANTED_BOOK
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,7 +15,4 @@ IMD:
     unbreakable: true
     lore:
     - '&7Tăng mọi ST thêm {value_0}%.'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

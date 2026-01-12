@@ -5,10 +5,10 @@ SA:
     y: 2
   custom_values:
   - 'level * 2.5'
-  - '2 + round(level / 4)'
+  - '(2 + round(level / 4))'
   item:
     material: LEATHER_BOOTS
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -18,8 +18,4 @@ SA:
     - '&7Mỗi khi bắn tên trúng đích, có xác suất'
     - '&7{value_0}% nhận được Tốc độ I. Hiệu ứng kéo dài'
     - '&7{value_1} giây.'
-    - '&cMũi tên kim cương X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

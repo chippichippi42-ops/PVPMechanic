@@ -24,29 +24,29 @@ def extract_lore_from_add_call(lore_line_raw):
 
         # Check if it's an expression (not just + or whitespace)
         if between and between != '+':
-            expr = between.rstrip('D')
-
             # Strip + operators from both sides
-            expr = expr.strip().strip('+')
+            expr = between.strip().strip('+').strip()
 
             # Process mathematical expressions
-            # First, strip Math.round (must come before Utility.toDecimal)
+            # Strip Utility.toDecimal - handle nested parentheses properly
+            # Start by removing the outermost Utility.toDecimal wrapper
+            if expr.startswith('Utility.toDecimal(') and expr.endswith(')'):
+                # Extract content between first ( and last )
+                expr = expr[18:-1]  # Remove 'Utility.toDecimal(' and ')'
+            
+            # Strip D suffix from numbers like 2.5D -> 2.5 or 10.0D -> 10.0 (BEFORE removing type casts)
+            expr = re.sub(r'(\d+\.?\d*)\s*D\b', r'\1', expr)
+            
+            # First, strip Math.round (must come after D suffix and Utility.toDecimal removal)
             expr = re.sub(r'Math\.round\(\(float\)\(([^)]+)\)\)', r'round(\1)', expr)
             expr = re.sub(r'Math\.round\(\(float\)([^)]+)\)', r'round(\1)', expr)
 
-            # Strip all Utility.toDecimal wrappers
-            expr = re.sub(r'Utility\.toDecimal\(\(double\)\(([^)]+)\)\)', r'\1', expr)
-            expr = re.sub(r'Utility\.toDecimal\(\(double\)([^)]+)\)', r'\1', expr)
-
-            # Strip all Utility.toDecimal without the nested parentheses
-            expr = re.sub(r'Utility\.toDecimal\(([^)]+)\)', r'\1', expr)
-
             # Strip type casts (with or without space)
-            expr = re.sub(r'\s*\(double\)\s*', '', expr)
-            expr = re.sub(r'\s*\(float\)\s*', '', expr)
+            expr = re.sub(r'\s*\(double\)\s*', ' ', expr)
+            expr = re.sub(r'\s*\(float\)\s*', ' ', expr)
 
-            # Strip D suffix from numbers like 2.5D -> 2.5 or 10.0D -> 10.0
-            expr = re.sub(r'(\d+\.?\d*)\s*D\s*', r'\1', expr)
+            # Clean up multiple spaces
+            expr = re.sub(r'\s+', ' ', expr).strip()
 
             # Clean up any leftover parentheses around simple expressions
             if expr.startswith('(') and expr.endswith(')'):
@@ -128,6 +128,8 @@ def parse_java_file(filepath):
         # Extract lore before cost section
         in_level_zero_block = False
         in_req_block = False
+        level_zero_brace_count = 0
+        req_brace_count = 0
         main_lore = []
 
         for i, line in enumerate(lines):
@@ -137,25 +139,33 @@ def parse_java_file(filepath):
             # Track if (level <= 0) block
             if 'if (level <= 0)' in line:
                 in_level_zero_block = True
-                continue
-
-            if in_level_zero_block and '}' in line:
-                in_level_zero_block = False
+                level_zero_brace_count = 0
                 continue
 
             if in_level_zero_block:
+                if '{' in line:
+                    level_zero_brace_count += line.count('{')
+                if '}' in line:
+                    level_zero_brace_count -= line.count('}')
+                    if level_zero_brace_count <= 0:
+                        in_level_zero_block = False
                 continue
 
-            # Check if we're in a requirement block
-            if 'getTalentLevel' in line and '< 10' in line:
-                in_req_block = True
-                continue
-
-            if in_req_block and '}' in line:
-                in_req_block = False
-                continue
+            # Check if we're in a requirement block (getTalentLevel check with < 10, < 15, etc.)
+            if 'getTalentLevel' in line and '<' in line and 'if' in line:
+                # Check if it's a requirement check (contains a number after <)
+                if re.search(r'<\s*\d+', line):
+                    in_req_block = True
+                    req_brace_count = line.count('{')  # Count opening braces on the same line
+                    continue
 
             if in_req_block:
+                if '{' in line:
+                    req_brace_count += line.count('{')
+                if '}' in line:
+                    req_brace_count -= line.count('}')
+                    if req_brace_count <= 0:
+                        in_req_block = False
                 continue
 
             # Extract lore.add() calls
@@ -178,36 +188,10 @@ def parse_java_file(filepath):
                         final_result = final_result.replace(f'{{value_{idx}}}', f'{{value_{custom_values.index(val)}}}')
                     main_lore.append(final_result)
 
-        # Add main lore to final lore_lines
+        # Add main lore to final lore_lines (only core description)
         lore_lines.extend(main_lore)
 
-        # Extract requirements
-        req_lines = []
-        in_req_extraction = False
-        for i, line in enumerate(lines):
-            if 'getTalentLevel' in line and '< 10' in line:
-                in_req_extraction = True
-                continue
-            if in_req_extraction and 'lore.add(' in line:
-                result, _ = extract_lore_from_add_call(line)
-                if result and result.strip() and 'Yêu cầu' not in result:
-                    req_lines.append(result)
-            if in_req_extraction and '}' in line:
-                in_req_extraction = False
-
-        # Add requirements section
-        if req_lines:
-            lore_lines.append('')
-            lore_lines.append('&cYêu cầu:')
-            for req in req_lines:
-                lore_lines.append(req)
-
-        # Add cost/upgrade info
-        lore_lines.append('')
-        lore_lines.append('&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!')
-        lore_lines.append('&bChuột phải để nâng cấp nhanh!')
-
-        # Add {state} at end
+        # Add {state} at end to handle all conditional logic
         lore_lines.append('{state}')
 
     return {
@@ -240,7 +224,7 @@ def generate_yaml(data):
 
     lines.append("  item:")
     lines.append(f"    material: {data['material']}")
-    lines.append("    name: '{displayName}{levelRoman}'")
+    lines.append("    name: '{color}{displayName}{levelRoman}'")
     lines.append("    flags:")
     lines.append("    - HIDE_ATTRIBUTES")
     lines.append("    - HIDE_ENCHANTS")
@@ -264,18 +248,40 @@ def main():
     print(f"Found {len(java_files)} Java files to convert\n")
 
     success_count = 0
+    class_name_counts = {}
+    
     for java_file in java_files:
         try:
             data = parse_java_file(java_file)
             if data:
                 yaml_content = generate_yaml(data)
+                
+                class_name = data['class_name']
+                
+                # Handle duplicate class names by adding category prefix
+                if class_name in class_name_counts:
+                    # Extract category from path
+                    path_parts = java_file.split(os.sep)
+                    if 'buttons' in path_parts:
+                        category_idx = path_parts.index('buttons') + 1
+                        if category_idx < len(path_parts):
+                            category = path_parts[category_idx]
+                            output_filename = f"{category}_{class_name}.yml"
+                        else:
+                            output_filename = f"{class_name}_{class_name_counts[class_name]}.yml"
+                    else:
+                        output_filename = f"{class_name}_{class_name_counts[class_name]}.yml"
+                    class_name_counts[class_name] += 1
+                else:
+                    output_filename = f"{class_name}.yml"
+                    class_name_counts[class_name] = 1
 
-                output_file = os.path.join(output_dir, f"{data['class_name']}.yml")
+                output_file = os.path.join(output_dir, output_filename)
 
                 with open(output_file, 'w', encoding='utf-8') as f:
                     f.write(yaml_content)
 
-                print(f"✓ {os.path.basename(java_file):20} → {data['class_name']}.yml")
+                print(f"✓ {os.path.basename(java_file):20} → {output_filename}")
                 success_count += 1
             else:
                 print(f"✗ {os.path.basename(java_file):20} → Failed to parse")
