@@ -7,7 +7,7 @@ BGA:
   - 'level * 2.5'
   item:
     material: SKULL_ITEM
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,8 +17,4 @@ BGA:
     lore:
     - '&7Táo vàng có {value_0}% cho người dùng Absorption III trong 3 phút'
     - '&7và Regeneration III trong 5 giây.'
-    - '&cChơi đá X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

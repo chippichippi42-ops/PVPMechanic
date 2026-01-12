@@ -7,7 +7,7 @@ RSSB:
   - 'level * 0.75'
   item:
     material: CHEST
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ RSSB:
     lore:
     - '&7Mỗi khi nhặt tài nguyên, có {value_0}% được thưởng thêm'
     - '&71 vật phẩm cùng loại.'
-    - '&cMạnh thường quân X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

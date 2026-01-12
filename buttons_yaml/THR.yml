@@ -7,7 +7,7 @@ THR:
   - 'level * 2.5'
   item:
     material: SLIME_BALL
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,9 +15,4 @@ THR:
     unbreakable: true
     lore:
     - '&7Giảm {value_0}% khả năng hút máu của kẻ tấn công.'
-    - '&cChống đỡ X'
-    - '&cChí mạng (cận chiến) X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

@@ -8,7 +8,7 @@ BL:
   - 'level * 2.5'
   item:
     material: GLASS
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,8 +17,4 @@ BL:
     lore:
     - '&7Nhận sát thương có {value_0}% tỷ lệ kích hoạt khiên,'
     - '&7giảm {value_1}% ST nhận vào.'
-    - '&cHồi sinh nhanh X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

@@ -7,7 +7,7 @@ SRG:
   - 'level * 2'
   item:
     material: BREAD
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,8 +15,4 @@ SRG:
     unbreakable: true
     lore:
     - '&7Tăng {value_0}% khả năng tự phục hồi.'
-    - '&cTu La X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

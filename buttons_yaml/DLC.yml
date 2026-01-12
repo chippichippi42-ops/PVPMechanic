@@ -7,7 +7,7 @@ DLC:
   - 'level * 4.25'
   item:
     material: DISPENSER
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ DLC:
     lore:
     - '&7Khi triệu hồi bedbug bởi tài năng &7&lTriệu hồi sư, &7có'
     - '&7xác suất {value_0}% triệu hồi ra thêm 1 bedbug.'
-    - '&cTriệu hồi sư X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

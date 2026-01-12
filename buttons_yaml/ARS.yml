@@ -7,7 +7,7 @@ ARS:
   - 'level * 0.025'
   item:
     material: GOLD_AXE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,9 +16,4 @@ ARS:
     lore:
     - '&7Khi kết liễu đối thủ, nhận được {value_0} công,'
     - '&7cộng dồn tối đa 5 lần.'
-    - '&cSad thủ X'
-    - '&cHãy trao cho anh X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

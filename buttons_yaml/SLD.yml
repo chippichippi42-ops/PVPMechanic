@@ -7,7 +7,7 @@ SLD:
   - 'level * 0.1'
   item:
     material: OBSIDIAN
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ SLD:
     lore:
     - '&7Khi kết liễu đối thủ, nhận được {value_0}% TL kích hoạt khiên'
     - '&7và {value_0}% TL giảm ST của khiên, cộng dồn tối đa 5 lần.'
-    - '&cChiến binh X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

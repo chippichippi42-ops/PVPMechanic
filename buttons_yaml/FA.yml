@@ -5,10 +5,10 @@ FA:
     y: 2
   custom_values:
   - 'level * 1.5'
-  - '1 + round(level / 5)'
+  - '(1 + round(level / 5))'
   item:
     material: BLAZE_POWDER
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,8 +17,4 @@ FA:
     lore:
     - '&7Tấn công cận chiến gây thiêu đốt đối thủ'
     - '&7với xác suất {value_0}% trong {value_1} giây.'
-    - '&cSắc bén X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

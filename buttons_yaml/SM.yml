@@ -8,7 +8,7 @@ SM:
   - '10 + level'
   item:
     material: SNOW_BALL
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,8 +17,4 @@ SM:
     lore:
     - '&7Mũi tên bắn trúng đối thủ có xác suất {value_0}%.'
     - '&7triệu hồi 1 bedbug trong {value_1} giây.'
-    - '&cTránh xa tao ra X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

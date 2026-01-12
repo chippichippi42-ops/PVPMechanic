@@ -7,7 +7,7 @@ ABS:
   - 'level'
   item:
     material: GOLDEN_APPLE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,9 +15,4 @@ ABS:
     unbreakable: true
     lore:
     - '&7Nhận sát thương có {value_0}% tỷ lệ nhận được thêm 2 tim vàng.'
-    - '&cTu La X'
-    - '&cMidas X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

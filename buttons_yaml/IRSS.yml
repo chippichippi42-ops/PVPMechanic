@@ -5,10 +5,10 @@ IRSS:
     y: 9
   custom_values:
   - 'level * 3'
-  - '(1 + round(level / 4 + 2 * round(level / 20)))'
+  - '(1 + round(level / 4) + 2 * round(level / 20))'
   item:
     material: GOLD_PICKAXE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -17,8 +17,4 @@ IRSS:
     lore:
     - '&7Bắt đầu trận đấu nhận được {value_0} thỏi sắt và'
     - '&7{value_1} thỏi vàng.'
-    - '&cThợ săn tiền thưởng X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

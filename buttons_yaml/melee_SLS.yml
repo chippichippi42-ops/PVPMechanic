@@ -1,12 +1,12 @@
-IRS:
-  display-name: Hồi sinh nhanh
+SLS:
+  display-name: Lưỡi đao máu
   location:
-    x: 3
-    y: 18
+    x: -1
+    y: 8
   custom_values:
-  - 'level * 3'
+  - 'level * 0.5'
   item:
-    material: GHAST_TEAR
+    material: IRON_AXE
     name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
@@ -14,5 +14,5 @@ IRS:
     - HIDE_UNBREAKABLE
     unbreakable: true
     lore:
-    - '&7Khi bị kết liễu, có xác suất {value_0}% hồi sinh ngay lập tức.'
+    - '&7Tăng tỷ lệ hút máu cận chiến thêm {value_0}%.'
     - '{state}'

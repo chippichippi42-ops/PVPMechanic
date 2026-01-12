@@ -7,11 +7,11 @@ KOBW:
   - 'level * 2.5'
   - 'level'
   - 'level * 0.8'
-  - '0.05 * (doublelevel)'
+  - '0.05 * level'
   - 'level * 0.15'
   item:
     material: BED
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -28,12 +28,4 @@ KOBW:
     - '&7đưa bản thân vào trạng thái &c&lđạo tàn bụ'
     - '&7trong {value_4} giây. (Hồi chiêu: 6 giây).'
     - '&8* &c&lĐạo tàn bụ: tăng 8% TLCM, 20% STCM.'
-    - '&cThần zú XV'
-    - '&cSong tiễn XV'
-    - '&cCá nóc XV'
-    - '&cJack 97 XV'
-    - '&cThần chiến tranh XV'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

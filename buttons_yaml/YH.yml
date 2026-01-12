@@ -7,7 +7,7 @@ YH:
   - 'level'
   item:
     material: GOLD_CHESTPLATE
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,8 +15,4 @@ YH:
     unbreakable: true
     lore:
     - '&7Nhận {value_0} tim vàng khi bắt đầu trận đấu.'
-    - '&cLông cặc X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

@@ -7,7 +7,7 @@ CA:
   - 'level * 1.5'
   item:
     material: BLAZE_ROD
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,8 +15,4 @@ CA:
     unbreakable: true
     lore:
     - '&7Mũi tên tăng {value_0}% tỷ lệ chí mạng.'
-    - '&cNhân đôi X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

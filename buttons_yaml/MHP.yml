@@ -7,7 +7,7 @@ MHP:
   - 'level * 0.25'
   item:
     material: POTION
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -15,7 +15,4 @@ MHP:
     unbreakable: true
     lore:
     - '&7Tăng máu tối đa thêm {value_0}HP.'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'

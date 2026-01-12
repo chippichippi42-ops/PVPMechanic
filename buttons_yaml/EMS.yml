@@ -7,7 +7,7 @@ EMS:
   - 'level * 3.5'
   item:
     material: EMERALD
-    name: '{displayName}{levelRoman}'
+    name: '{color}{displayName}{levelRoman}'
     flags:
     - HIDE_ATTRIBUTES
     - HIDE_ENCHANTS
@@ -16,8 +16,4 @@ EMS:
     lore:
     - '&7Khi mua 1 quả TNT có xác suất {value_0}%.'
     - '&7nhận được 1 quả bóng lửa.'
-    - '&cBomman X'
-    - ''
-    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
-    - '&bChuột phải để nâng cấp nhanh!'
     - '{state}'
