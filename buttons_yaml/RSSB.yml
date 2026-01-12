@@ -1,0 +1,23 @@
+RSSB:
+  display-name: Hãy trao cho anh
+  location:
+    x: 4
+    y: 20
+  custom_values:
+  - 'level * 0.75'
+  item:
+    material: CHEST
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Mỗi khi nhặt tài nguyên, có {value_0}% được thưởng thêm'
+    - '&71 vật phẩm cùng loại.'
+    - '&cMạnh thường quân X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

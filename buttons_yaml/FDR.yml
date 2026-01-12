@@ -1,0 +1,22 @@
+FDR:
+  display-name: Lông cặc
+  location:
+    x: 1
+    y: 0
+  custom_values:
+  - 'level * 2.5'
+  item:
+    material: FEATHER
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Giảm {value_0}% sát thương rơi nhận vào.'
+    - '&cMáu tối đa X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

@@ -1,0 +1,24 @@
+SHR:
+  display-name: Tu La
+  location:
+    x: 2
+    y: 6
+  custom_values:
+  - 'level * 1.5'
+  item:
+    material: SKULL_ITEM
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZhMTA2YmQ3YzViZDNmZDA2ZDkwOGRmZjFjNzczMjVjNTIxZGM4NzM1YzAxYWFkZTc3N2YwNTY0MjFhZDkyOSJ9fX0='
+    lore:
+    - '&7Khi kết liễu đối thủ, hồi lại {value_0}% máu tối đa.'
+    - '&cDa cứng X'
+    - '&cĐá khởi đầu X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

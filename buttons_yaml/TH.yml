@@ -1,0 +1,25 @@
+TH:
+  display-name: Thần zú
+  location:
+    x: -1
+    y: 22
+  custom_values:
+  - 'level * 1.5'
+  item:
+    material: SKULL_ITEM
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWYwNWExMzg1MzczNGI2YTdlNGY0NWVhYjcyYmI5ZGJjYzkxN2U3ODBjZDFlYjZkNjMwNDA1ZmE4Mjk5NjY1In19fQ=='
+    lore:
+    - '&7Đòn cận chiến lên mục tiêu có xác suất {value_0}% triệu hồi'
+    - '&bSấm sét &7gây 2 điểm ST chuẩn lên mục tiêu và &ahồi phục'
+    - '&7trực tiếp cho bản thân 1 máu.'
+    - '&cSát thương chí mạng X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

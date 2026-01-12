@@ -1,0 +1,22 @@
+AAD:
+  display-name: Mũi tên kim cương
+  location:
+    x: -3
+    y: 0
+  custom_values:
+  - 'level * 0.1'
+  item:
+    material: ARROW
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tăng ST mũi tên thêm {value_0}.'
+    - '&cCường hóa X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

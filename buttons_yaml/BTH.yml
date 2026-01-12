@@ -1,0 +1,23 @@
+BTH:
+  display-name: Thợ săn tiền thưởng
+  location:
+    x: 5
+    y: 8
+  custom_values:
+  - 'level'
+  - '1 + round(level / 10)'
+  item:
+    material: GOLD_SPADE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Khi kết liễu đối thủ, nhận được {value_0} thỏi sắt và {value_1} thỏi vàng.'
+    - '&cMidas X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

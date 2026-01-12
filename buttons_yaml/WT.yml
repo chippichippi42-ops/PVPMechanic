@@ -1,0 +1,25 @@
+WT:
+  display-name: Mộ len
+  location:
+    x: 3
+    y: 10
+  custom_values:
+  - 'level * 2'
+  item:
+    material: SKULL_ITEM
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDRiMDM3OTRiOWIzZTNiNWQwN2UzYmU2OGI5NmFmODdkZjIxNWMzNzUyZTU0NzM2YzgwZjdkNTBiZDM0MzdhNCJ9fX0='
+    lore:
+    - '&7Khi hồi sinh, nhận được {value_0} len.'
+    - '&cHấp thụ X'
+    - '&cThợ săn tiền thưởng X'
+    - '&cTự phục hồi X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

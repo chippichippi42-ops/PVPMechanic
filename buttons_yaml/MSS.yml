@@ -1,0 +1,22 @@
+MSS:
+  display-name: Chơi đá
+  location:
+    x: 4
+    y: 16
+  custom_values:
+  - 'level'
+  item:
+    material: STAINED_CLAY
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Chiến thắng trận đấu sẽ nhận được thêm {value_0} soulstones.'
+    - '&cMộ đá X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

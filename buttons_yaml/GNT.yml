@@ -1,0 +1,23 @@
+GNT:
+  display-name: Khổng lồ hóa
+  location:
+    x: 2
+    y: 16
+  custom_values:
+  - '3.0 * ((double(31 - level) - Math.floor((level / 20))))'
+  item:
+    material: DIAMOND_CHESTPLATE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Sau khi bắt đầu trận đấu, cứ mỗi {value_0} giây sẽ'
+    - '&7được tăng 1 máu tối đa. Tối đa 5 điểm.'
+    - '&cMộ đá X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

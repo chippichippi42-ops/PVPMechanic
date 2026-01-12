@@ -1,0 +1,23 @@
+AMAD:
+  display-name: Ma gaeming booyah
+  location:
+    x: -1
+    y: 16
+  custom_values:
+  - 'level * 0.5'
+  item:
+    material: ANVIL
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tỷ số ST gây ra dựa trên sát thương đòn đánh gốc'
+    - '&7của đòn đánh phụ được tăng thêm {value_0}%.'
+    - '&cMa gaeming X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

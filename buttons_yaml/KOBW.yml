@@ -1,0 +1,39 @@
+KOBW:
+  display-name: Vua giường chiếu
+  location:
+    x: 1
+    y: 24
+  custom_values:
+  - 'level * 2.5'
+  - 'level'
+  - 'level * 0.8'
+  - '0.05 * (doublelevel)'
+  - 'level * 0.15'
+  item:
+    material: BED
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Mỗi khi gây sát thương:'
+    - '&7 + Có xác suất {value_0}% tăng {value_1}% sát thương.'
+    - '&7Mỗi khi nhận sát thương:'
+    - '&7 + Có xác suất {value_0}% giảm {value_2}% sát thương.'
+    - '&7Đồng thời, với mỗi 10% máu mất đi,'
+    - '&7tăng {value_3}% mọi ST, mọi giảm ST.'
+    - '&7Và khi máu <= 50% mà phải chịu ST sẽ'
+    - '&7đưa bản thân vào trạng thái &c&lđạo tàn bụ'
+    - '&7trong {value_4} giây. (Hồi chiêu: 6 giây).'
+    - '&8* &c&lĐạo tàn bụ: tăng 8% TLCM, 20% STCM.'
+    - '&cThần zú XV'
+    - '&cSong tiễn XV'
+    - '&cCá nóc XV'
+    - '&cJack 97 XV'
+    - '&cThần chiến tranh XV'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

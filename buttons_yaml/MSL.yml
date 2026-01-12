@@ -1,0 +1,24 @@
+MSL:
+  display-name: Băng lạnh
+  location:
+    x: -1
+    y: 4
+  custom_values:
+  - 'level * 1.5'
+  - '1 + round(level / 5)'
+  item:
+    material: SNOW_BLOCK
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tấn công cận chiến gây hiệu ứng làm chậm I'
+    - '&7với xác suất {value_0}% trong {value_1} giây.'
+    - '&cDo thái X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

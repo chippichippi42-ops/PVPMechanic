@@ -1,0 +1,23 @@
+MLS:
+  display-name: Ma cà rồng
+  location:
+    x: -2
+    y: 6
+  custom_values:
+  - 'level * 1.5'
+  item:
+    material: SPIDER_EYE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tăng {value_0}% hút máu.'
+    - '&cBăng lạnh X'
+    - '&cCông túa băng giá X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

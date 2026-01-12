@@ -1,0 +1,22 @@
+YH:
+  display-name: Tim vàng
+  location:
+    x: 1
+    y: 2
+  custom_values:
+  - 'level'
+  item:
+    material: GOLD_CHESTPLATE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Nhận {value_0} tim vàng khi bắt đầu trận đấu.'
+    - '&cLông cặc X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

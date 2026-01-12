@@ -1,0 +1,22 @@
+FBD:
+  display-name: Naruto
+  location:
+    x: 5
+    y: 0
+  custom_values:
+  - 'level * 2.5'
+  item:
+    material: FIREBALL
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Tăng sát thương đạn lửa thêm {value_0}%.'
+    - '&cMáu tối đa X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'

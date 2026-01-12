@@ -1,0 +1,22 @@
+EST:
+  display-name: Mộ đá
+  location:
+    x: 3
+    y: 14
+  custom_values:
+  - 'level'
+  item:
+    material: ENDER_STONE
+    name: '{displayName}{levelRoman}'
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    - HIDE_UNBREAKABLE
+    unbreakable: true
+    lore:
+    - '&7Khi hồi sinh, nhận được {value_0} đá kêt thúc.'
+    - '&cMộ gỗ X'
+    - ''
+    - '&eBạn cần &d{cost} &eđá linh hồn để nâng cấp!'
+    - '&bChuột phải để nâng cấp nhanh!'
+    - '{state}'
